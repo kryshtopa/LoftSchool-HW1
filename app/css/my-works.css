@@ -1,0 +1,82 @@
+/*----- Мои работы -----*/
+
+.work-wrap {
+  padding: 39px 27px;
+  min-height: 840px;
+}
+.work,
+.work-new {
+  border: 1px solid #bcbcbc;
+  border-radius: 5px;
+  background-image: -moz-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  box-shadow: -1px 1px 1px 0px rgba(9, 9, 9, 0.1);
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  width: 167px;
+  margin: 0 14px 50px 15px;
+}
+.work-preview {
+  border-bottom: 1px solid #bcbcbc;
+  border-radius: 5px 5px 0 0;
+  display: block;
+  height: 119px;
+  opacity: 0.4;
+  width: 166px;
+}
+.work-preview:hover {
+  opacity: 1;
+}
+.work-preview:visited {
+  background-color: blue;
+}
+.work-title {
+  background-color: #f2f2f2;
+  display: block;
+  font-size: 13px;
+  font-family: "OpenSans-Semibold";
+  color: rgb(114, 112, 112);
+  line-height: 2.6;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0.5px 1px 0px rgba(255, 255, 255, 0.3);
+}
+.work-description {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  font-size: 12px;
+  font-family: "OpenSans-Light";
+  color: rgb(114, 112, 112);
+  line-height: 1.4;
+  padding: 7px 11px;
+  text-align: center;
+
+}
+.work-new {
+padding: 20px 21px;
+  font-size: 14px;
+  font-family: "OpenSans-Semibold";
+  color: rgb(114, 112, 112);
+  line-height: 1.6;
+  text-align: left;
+  text-shadow: 0.5px 0.9x 0px rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+.work-new:hover {
+  background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
+}
+.work-new:hover .work-new-icon {
+  background-color: rgb(191, 191, 191);
+  box-shadow: 0.5px 0.9px 0px 0px rgba(255, 255, 255, 0.4), inset 0.5px 0.9px 0px 0px rgba(199, 199, 199, 0.3);
+}
+.work-new-icon {
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  box-shadow: 0.5px 1px 0px 0px rgba(255, 255, 255, 0.392), inset 1.5px 1px 0px 0px #d1d1d1;
+  margin: 8px auto;
+}
