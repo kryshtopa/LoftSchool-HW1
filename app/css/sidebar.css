@@ -1,0 +1,130 @@
+/*----- SIDEBAR -----*/
+
+/*----- Навигация -----*/
+
+.navigation {
+  margin-bottom: 34px;
+}
+.menu-ul {
+  margin: 0;
+  padding: 0;
+}
+.menu-li {
+  background-image: -moz-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  border: 1px solid #c3c3c3;
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.027), inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
+  cursor: pointer;
+  list-style: none;
+}
+.menu-li:hover {
+  background-image: -moz-linear-gradient( 90deg, #bfbcbc 0%, #e8e7e7 100%);
+  background-image: -webkit-linear-gradient( 90deg, #bfbcbc 0%, #e8e7e7 100%);
+  background-image: -ms-linear-gradient( 90deg, #bfbcbc 0%, #e8e7e7 100%);
+  box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
+}
+.menu-li:active {
+  background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+  border: 1px solid #c3c3c3;
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.063), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.118);
+}
+.menu-li:first-child {
+  border-radius: 5px 5px 0 0;
+}
+.menu-li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+.menu-a {
+  color: rgb(114, 112, 112);
+  display: block;
+  font-size: 20px;
+  font-family: "OpenSans-Semibold";
+  line-height: 2.7;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: 0.5px 1px 0px rgba(255, 255, 255, 0.5);
+  padding: 0 27px;
+}
+
+/*----- Контакты -----*/
+
+.contacts {
+  border-radius: 5px;
+  background-color: #eff3f7;
+  margin-bottom: 40px;
+  font-style: normal;
+}
+.contacts-header {
+  background-image: -moz-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
+  background-image: -ms-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.067), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.098);
+  border-radius: 5px 5px 0 0;
+  color: rgb(208, 152, 44);
+  font-size: 20px;
+  font-family: "OpenSans-Semibold";
+  height: 43px;
+  line-height: 2.2;
+  margin: 0;
+  padding: 0 27px;
+  text-align: left;
+  text-shadow: 0.5px 1px 0px rgba(255, 255, 255, 0.5);
+}
+.contacts-ul {
+  margin: 0;
+  padding: 0;
+}
+.contacts-li {
+  background-image: -moz-linear-gradient( 90deg, #f7f6f6 0%, #fff 100%);
+  background-image: -webkit-linear-gradient( 90deg, #f7f6f6 0%, #fff 100%);
+  background-image: -ms-linear-gradient( 90deg, #f7f6f6 0%, #fff 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(114, 112, 112, 0.039);
+  border: solid 1px rgb(214, 213, 211);
+  list-style-type: none;
+}
+.contacts-li:hover {
+  background-image: -moz-linear-gradient( 90deg, #f2e7d0 0%, #fff 100%);
+  background-image: -webkit-linear-gradient( 90deg, #f2e7d0 0%, #fff 100%);
+  background-image: -ms-linear-gradient( 90deg, #f2e7d0 0%, #fff 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+}
+.contacts-li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+.contacts-raw {
+  color: #727070;
+  display: block;
+  cursor: pointer;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  line-height: 2.7;
+  padding-left: 80px;
+  position: relative;
+  text-decoration: none;
+}
+.contacts-mail:before,
+.contacts-phone:before,
+.contacts-skype:before {
+  content: "";
+  background-image: url('../img/spritesheet.png');
+  background-repeat: no-repeat;
+  display: block;
+  height: 38px;
+  left: 9px;
+  margin: 0 0 0 10px;
+  position: absolute;
+  top: -1px;
+  width: 39px;
+}
+.contacts-mail:before {
+  background-position: -5px -122px;
+}
+.contacts-phone:before {
+  background-position: -104px -122px;
+}
+.contacts-skype:before {
+  background-position: -200px -68px;
+}

@@ -1,0 +1,167 @@
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-case {
+    width: 53px;
+    height: 53px;
+    background-position: -5px -5px;
+}
+
+.sprite-cloud {
+    width: 26px;
+    height: 18px;
+    background-position: -68px -5px;
+}
+
+.sprite-cross-grey {
+    width: 15px;
+    height: 14px;
+    background-position: -104px -5px;
+}
+
+.sprite-cross-red {
+    width: 15px;
+    height: 14px;
+    background-position: -129px -5px;
+}
+
+.sprite-cross-small-green {
+    width: 11px;
+    height: 11px;
+    background-position: -154px -5px;
+}
+
+.sprite-cross-small-red {
+    width: 11px;
+    height: 11px;
+    background-position: -175px -5px;
+}
+
+.sprite-facebook {
+    width: 36px;
+    height: 36px;
+    background-position: -154px -26px;
+}
+
+.sprite-facebook:hover {
+    width: 36px;
+    height: 36px;
+    background-position: -5px -72px;
+}
+
+.sprite-git {
+    width: 36px;
+    height: 36px;
+    background-position: -51px -72px;
+}
+
+.sprite-git:hover {
+    width: 36px;
+    height: 36px;
+    background-position: -97px -72px;
+}
+
+.sprite-key {
+    width: 39px;
+    height: 40px;
+    background-position: -143px -72px;
+}
+
+.sprite-locked {
+    width: 23px;
+    height: 21px;
+    background-position: -200px -5px;
+}
+
+.sprite-mail {
+    width: 39px;
+    height: 38px;
+    background-position: -5px -122px;
+}
+
+.sprite-mail-big {
+    width: 40px;
+    height: 40px;
+    background-position: -54px -122px;
+}
+
+.sprite-phone {
+    width: 39px;
+    height: 38px;
+    background-position: -104px -122px;
+}
+
+.sprite-picture {
+    width: 53px;
+    height: 53px;
+    background-position: -153px -122px;
+}
+
+.sprite-school {
+    width: 53px;
+    height: 53px;
+    background-position: -233px -5px;
+}
+
+.sprite-skype {
+    width: 39px;
+    height: 38px;
+    background-position: -200px -68px;
+}
+
+.sprite-study {
+    width: 53px;
+    height: 53px;
+    background-position: -216px -116px;
+}
+
+.sprite-tag-center {
+    width: 1px;
+    height: 21px;
+    background-position: -249px -68px;
+}
+
+.sprite-tag-left {
+    width: 15px;
+    height: 21px;
+    background-position: -260px -68px;
+}
+
+.sprite-tag-right {
+    width: 11px;
+    height: 21px;
+    background-position: -8px -179px;
+}
+
+.sprite-twitter {
+    width: 36px;
+    height: 36px;
+    background-position: -26px -179px;
+}
+
+.sprite-twitter:hover {
+    width: 36px;
+    height: 36px;
+    background-position: -72px -179px;
+}
+
+.sprite-locked:hover {
+    width: 23px;
+    height: 21px;
+    background-position: -118px -179px;
+}
+
+.sprite-vk {
+    width: 36px;
+    height: 36px;
+    background-position: -216px -179px;
+}
+
+.sprite-vk:hover {
+    width: 36px;
+    height: 36px;
+    background-position: -5px -225px;
+}

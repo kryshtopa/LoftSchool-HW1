@@ -1,0 +1,205 @@
+@import "grid.css";
+@import "sprite-stylesheet.css";
+@import "sidebar.css";
+@import "about.css";
+@import "my-works.css";
+@import "contact.css";
+
+
+html {
+  height: 100%;
+}
+
+body {
+  background: url(../img/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: rgb(114, 112, 112);
+  font: normal 1em 'OpenSans-Semibold';
+  height: 100%;
+}
+
+/*----- General styles -----*/
+
+.container {
+  margin: 0 auto;
+  width: 1020px;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  float: right;
+}
+.text-left {
+  float: left;
+}
+
+/*----- HEADER -----*/
+
+.header {
+  background-image: url("../img/bg-head.png");
+  height: 89px;
+  margin-bottom: 43px;
+  position: relative;
+}
+.header:after {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0.5px 1px 0px 0px rgba(0, 0, 0, 0.1);
+  height: 7px;
+  position: absolute;
+  top: 89px;
+  width: 100%;
+}
+.container-header {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 960px;
+  position: relative;
+}
+.logo {
+  cursor: pointer;
+  height: 49px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 20px;
+  white-space: nowrap;
+  width: 169px;
+}
+.social {
+  position: absolute;
+  top: 27px;
+  right: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.social-button {
+  border-radius: 50%;
+  background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.122), inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
+  cursor: pointer;
+  display: inline-block;
+  height: 36px;
+  margin: 0 0 0 11px;
+  width: 36px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.social-button:hover {
+  box-shadow: inset 0px 1px 1px 0px rgba(9, 9, 9, 1),
+}
+.social-button:first-child {
+  margin: 0;
+}
+.sprite-facebook,
+.sprite-vk,
+.sprite-twitter,
+.sprite-git {
+  margin: 1px 0 0 1px;
+}
+.sprite-facebook:hover,
+.sprite-vk:hover,
+.sprite-twitter:hover,
+.sprite-git:hover {
+  margin: 2px 0 0 1px;
+}
+
+/*----- FOOTER -----*/
+
+.footer {
+  background-image: -moz-linear-gradient( 90deg, #fff 0%, #f0f0f0 100%);
+  background-image: -webkit-linear-gradient( 90deg, #fff 0%, #f0f0f0 100%);
+  background-image: -ms-linear-gradient( 90deg, #fff 0%, #f0f0f0 100%);
+  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.04);
+  font-family: "OpenSans-Light";
+
+}
+.footer .container-footer {
+  padding-top: 15px;
+  position: relative;
+}
+.footer .copyright {
+  margin: 0 180px;
+  padding-top: 7px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/*----- Login -----*/
+
+.footer .login {
+  position: absolute;
+  top: 19px;
+  left: 88px;
+}
+.container-footer {
+  margin: 0 auto;
+  position: relative;
+  width: 800px;
+}
+.login .login-text {
+  color: #9c9c9c;
+  display: block;
+  font-family: 'OpenSans-Bold';
+  font-size: 14px;
+  height: 40px;
+  line-height: 1.4;
+  padding-left: 24px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: 0.5px 0.866px 1px rgba(255, 255, 255, 0.333);
+  text-transform: lowercase;
+}
+
+/*----- Прижимаем футер -----*/
+
+.wrap {
+  height: auto!important;
+  min-height: 100%;
+  min-width: 1030px;
+  overflow: hidden;
+  position: relative;
+}
+.wrap:after {
+  content: "";
+  display: block;
+  height: 61px;
+}
+.footer {
+  height: 61px;
+  margin-top: -55px;
+  min-width: 1030px;
+}
+
+/*----- CLEARFIX -----*/
+
+.container:before,
+.container:after,
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.container:after,
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+/*----- Для корректного отображения фона в IE8 -----*/
+
+body {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/background.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/background.png', sizingMethod='scale')";
+}

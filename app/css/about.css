@@ -1,0 +1,170 @@
+/*----- BLOCK 1 - ОСНОВНАЯ ИНФОРМАЦИЯ -----*/
+
+.block {
+  background-color: #f6f5f4;
+  border-radius: 5px;
+  box-shadow: 2.5px 4.5px 10px 0px rgba(236, 232, 227, 0.1), inset 3px 5px 6px 0px rgba(255, 255, 255, 0.5);
+  margin-bottom: 36px;
+}
+.heading {
+  background-image: -moz-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+  border-radius: 5px 5px 0 0;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.118);
+  color: rgb(238, 237, 236);
+  font-size: 24px;
+  font-family: "OpenSans-Semibold";
+  height: 56px;
+  line-height: 2.2;
+  margin: 0;
+  padding: 0 42px;
+  text-align: left;
+  text-shadow: 0.5px 0.866px 0px rgba(102, 101, 101, 0.5);
+}
+.avatar-row {
+  float: left;
+  margin: 41px 0 34px 44px;
+  text-align: center;
+}
+.avatar {
+  border: 8px solid white;
+  border-radius: 50%;
+  height: 147px;
+  width: 149px;
+}
+.bio {
+  float: right;
+  list-style-type: none;
+  margin: 36px 36px 27px 36px ;
+  padding: 0;
+  width: 386px;
+}
+.bio-row,
+.bio-row-skills {
+  color: rgb(114, 112, 112);
+  float: left;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0 0 11px;
+  text-align: left;
+  width: 100%;
+}
+.bio-row-skills {
+  margin: 10px 0 0 0;
+}
+.bio-question {
+  float: left;
+  font-family: "OpenSans-Semibold";
+  margin-right: 7px;
+}
+.bio-answer {
+  font-family: "OpenSans-Regular";
+  margin: 0;
+  max-width: 300px;
+  overflow: hidden;
+  padding: 0;
+}
+
+/*--- Бирки с ключевыми навыками ---*/
+
+.bio-skills {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 -3px 6px 0;
+  position: relative;
+}
+.bio-skills:before {
+  content: "";
+  background-image: url('../img/spritesheet.png');
+  background-position: -260px -68px;
+  background-repeat: no-repeat;
+  height: 21px;
+  margin: 0;
+  position: absolute;
+  width: 14px;
+}
+.bio-skills-text {
+  color: rgb(30, 116, 101);
+  display: inline-block;
+  height: 21px;
+  background-image: url('../img/tag-center.png');
+  font-family: "OpenSans-Semibold";
+  font-size: 9px;
+  line-height: 2;
+  margin: 0 12px;
+  text-align: left;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.866px 0px rgba(255, 255, 255, 0.176);
+  padding: 0 4px;
+  position: relative;
+}
+.bio-skills-text:after {
+  content: "";
+  background-image: url('../img/spritesheet.png');
+  background-position: -8px -179px;
+  background-repeat: no-repeat;
+  height: 21px;
+  margin: 0;
+  position: absolute;
+  width: 8px;
+}
+
+/*----- BLOCKS 2&3 - ОПЫТ РАБОТЫ И ОБРАЗОВАНИЕ -----*/
+
+.work-and-study-wrapper {
+  padding: 21px 48px 21px 42px;
+}
+.work-and-study-wrap {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.work-and-study-value {
+  border-bottom: 1px solid #dbdbda;
+  padding: 25px 0 25px 96px;
+  position: relative;
+}
+.work-and-study-value:last-child {
+  border-bottom: 0px;
+}
+.work-and-study-icon:before {
+  content: "";
+  background-color: #f7f7f7;
+  background-image: url('../img/spritesheet.png');
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  box-shadow: 0.5px 1px 0px 0px rgba(255, 255, 255, 0.392), inset 1.5px 1px 0px 0px #d1d1d1;
+  height: 53px;
+  left: 0;
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  width: 53px;
+}
+.work-and-study-icon-case:before {
+  content: "";
+  background-position: -5px -5px;
+}
+.work-and-study-icon-grade:before {
+  content: "";
+  background-position: -216px -116px;
+}
+.work-and-study-icon-school:before {
+  content: "";
+  background-position: -233px -5px;
+}
+.work-and-study-name,
+.work-and-study-date {
+  color: rgb(114, 112, 112);
+  font-family: "OpenSans-Semibold";
+  font-size: 15px;
+  line-height: 1.4;
+  max-width: 461px;
+}
+.work-and-study-name {
+  font-family: "OpenSans-Semibold";
+}
+.work-and-study-date {
+  font-family: "OpenSans-Regular";
+}
