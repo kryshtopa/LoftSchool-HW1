@@ -1,0 +1,17 @@
+.sprite-footer {
+    background-image: url(../img/spritesheet-footer.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-footer-locked {
+    width: 23px;
+    height: 21px;
+    background-position: -5px -5px;
+}
+
+.sprite-footer-locked:hover {
+    width: 23px;
+    height: 21px;
+    background-position: -5px -36px;
+}

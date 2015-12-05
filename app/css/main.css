@@ -1,5 +1,5 @@
-@import "grid.css";
 @import "sprite-stylesheet.css";
+@import "sprite-stylesheet-footer.css";
 @import "sidebar.css";
 @import "about.css";
 @import "my-works.css";
@@ -23,9 +23,26 @@ body {
 
 /*----- General styles -----*/
 
+* {
+  box-sizing: border-box;
+}
 .container {
   margin: 0 auto;
-  width: 1020px;
+  width: 960px;
+}
+.col1,
+.col2  {
+  display: inline;
+  margin: 0;
+  word-break: break-all;
+}
+.col1 {
+  width: 250px;
+  float: left;
+}
+.col2  {
+  width: 651px;
+  float: right;
 }
 .text-center {
   text-align: center;
@@ -70,6 +87,9 @@ body {
   top: 20px;
   white-space: nowrap;
   width: 169px;
+}
+.logo-img {
+  display: block;
 }
 .social {
   position: absolute;
@@ -128,18 +148,19 @@ body {
   position: relative;
 }
 .footer .copyright {
-  margin: 0 180px;
-  padding-top: 7px;
   text-align: center;
   font-size: 12px;
+  float: left;
+  padding-top: 8px;
+  width: 621px;
 }
 
 /*----- Login -----*/
 
 .footer .login {
-  position: absolute;
-  top: 19px;
-  left: 88px;
+  float: left;
+  margin: 5px 0 0 88px;
+  width: 70px;
 }
 .container-footer {
   margin: 0 auto;
@@ -153,7 +174,7 @@ body {
   font-size: 14px;
   height: 40px;
   line-height: 1.4;
-  padding-left: 24px;
+  padding-left: 27px;
   text-align: left;
   text-decoration: none;
   text-shadow: 0.5px 0.866px 1px rgba(255, 255, 255, 0.333);
@@ -176,7 +197,7 @@ body {
 }
 .footer {
   height: 61px;
-  margin-top: -55px;
+  margin-top: -61px;
   min-width: 1030px;
 }
 

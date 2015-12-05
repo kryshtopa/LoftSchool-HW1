@@ -1,8 +1,12 @@
 /*----- Мои работы -----*/
 
+.my-works {
+  margin: 0 0 39px 0;
+}
 .work-wrap {
-  padding: 39px 27px;
+  margin: 0;
   min-height: 840px;
+  padding: 0 0 0 12px;
 }
 .work,
 .work-new {
@@ -16,21 +20,40 @@
   overflow: hidden;
   vertical-align: top;
   width: 167px;
-  margin: 0 14px 50px 15px;
+  margin: 0 0 50px 29px;
 }
 .work-preview {
   border-bottom: 1px solid #bcbcbc;
   border-radius: 5px 5px 0 0;
   display: block;
   height: 119px;
-  opacity: 0.4;
-  width: 166px;
+  opacity: 0.6;
+  position: relative;
+  width: 167px;
 }
 .work-preview:hover {
   opacity: 1;
 }
-.work-preview:visited {
-  background-color: blue;
+.work-preview .work-link {
+  display:none;
+}
+.work-preview:hover .work-link {
+  background-color: #979797;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  display: block;
+  line-height: 2;
+  font-family: "OpenSans-Semibold";
+  position: absolute;
+  text-transform: uppercase;
+  text-align: center;
+  top: 35%;
+  width: 100%;
+}
+.work-preview-img {
+  height: 100%;
+  width: 100%;
 }
 .work-title {
   background-color: #f2f2f2;

@@ -31,6 +31,20 @@
   border: 1px solid #c3c3c3;
   box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.063), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.118);
 }
+              .active-button-index,
+              .active-button-works,
+              .active-button-cont {
+                background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+                background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+                background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+                box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.063), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.118);
+              }
+              .active-button-index {
+                border-radius: 5px 5px 0 0;
+              }
+              .active-button-cont {
+                border-radius: 0 0 5px 5px;
+              }
 .menu-li:first-child {
   border-radius: 5px 5px 0 0;
 }
@@ -66,8 +80,7 @@
   color: rgb(208, 152, 44);
   font-size: 20px;
   font-family: "OpenSans-Semibold";
-  height: 43px;
-  line-height: 2.2;
+  line-height: 2;
   margin: 0;
   padding: 0 27px;
   text-align: left;
