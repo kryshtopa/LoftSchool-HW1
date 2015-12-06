@@ -7,7 +7,7 @@
   margin-bottom: 36px;
 }
 .heading {
-  background-color: #818180;  
+  background-color: #818180;
   background-image: -moz-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
@@ -17,9 +17,9 @@
   color: rgb(238, 237, 236);
   font-size: 24px;
   font-family: "OpenSans-Semibold";
-  line-height: 2.2;
+  line-height: 1.2;
   margin: 0;
-  padding: 0 42px;
+  padding: 12px 42px;
   text-align: left;
   text-shadow: 0.5px 0.866px 0px rgba(102, 101, 101, 0.5);
 }

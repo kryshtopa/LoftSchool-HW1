@@ -224,7 +224,7 @@ body {
     *zoom: 1;
 }
 
-/*----- Для корректного отображения фона в IE8 -----*/
+/*----- Для лучшего отображения фона в IE8 -----*/
 
 body {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/background.png', sizingMethod='scale');

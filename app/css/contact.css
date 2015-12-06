@@ -67,11 +67,12 @@
   color: rgb(114, 112, 112);
   font-size: 14px;
   font-family: "OpenSans-Semibold";
-  line-height: 2.7;
+  line-height: 1.4;
   margin: 0 28px;
-  padding: 0 23px;
+  padding: 8px 10px 10px 10px;
   text-align: center;
   text-shadow: 0.5px 1px 0px rgba(255, 255, 255, 0.7);
+  width: 124px;
 }
 .contact-page-send {
   background-image: -moz-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
