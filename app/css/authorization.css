@@ -1,0 +1,108 @@
+/*--- СТРАНИЦА АВТОРИЗАЦИИ ---*/
+
+.authorization-box {
+  background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, #f0eeed 0%, #fbfbfa 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+  border-radius: 5px;
+  box-shadow: 5.5px 9.526px 27px 0px rgba(159, 159, 159, 0.294), inset 3px 5.196px 6px 0px rgba(255, 255, 255, 0.392);
+  padding: 40px 0;
+}
+.authorization-box:before {
+  content: "Авторизируйтесь";
+  color: rgb(114, 112, 112);
+  font-size: 12px;
+  font-family: "OpenSans-Light";
+  left: 22px;
+  position: absolute;
+  text-align: left;
+  top: -20px;
+}
+.authorization-input {
+  background-repeat: no-repeat;
+  border: 1px solid #d6d5d3;
+  border-radius: 4px;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+  color: rgb(199, 198, 198);
+  font-family: "OpenSans-Light";
+  font-size: 12px;
+  height: 40px;
+  line-height: 1;
+  outline: none;
+  padding: 0 0 0 70px;
+  text-align: left;
+  width: 254px;
+}
+.authorization-mail {
+  background-image: url(../img/mail-big.png), -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  background-image:  url(../img/mail-big.png), -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  background-image: url(../img/mail-big.png), -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  margin: 0 0 24px 37px;
+}
+.authorization-key {
+  background-image: url(../img/key.png), -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  background-image:  url(../img/key.png), -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  background-image: url(../img/key.png), -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  margin: 0 0 18px 37px;
+}
+.remember {
+  color: rgb(114, 112, 112);
+  font-size: 14px;
+  font-family: "OpenSans-Regular";
+  margin: 0 0 20px 34px;
+
+}
+.login-button {
+  margin: 0 0 0 60px;
+}
+.login-button .contact-page-send {
+  width: 154px;
+}
+
+/*--- Оформление чекбокса ---*/
+
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+.checkbox + label {
+  cursor: pointer;
+}
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 32px;
+}
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background-image: url('../img/check-box.png') ;
+}
+.checkbox:checked + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background-image: url('../img/check-mark.png');
+}
+
+/*--- Выравнивание блока авторизации по центру страницы ---*/
+.authorization-box {
+  width: 330px;
+  height: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -170px 0 0 -165px;
+}
