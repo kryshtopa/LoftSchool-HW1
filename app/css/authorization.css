@@ -23,7 +23,7 @@
   border: 1px solid #d6d5d3;
   border-radius: 4px;
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
-  color: rgb(199, 198, 198);
+  color: rgb(70, 70, 70);
   font-family: "OpenSans-Light";
   font-size: 12px;
   height: 40px;
@@ -56,7 +56,8 @@
   margin: 0 0 0 60px;
 }
 .login-button .contact-page-send {
-  width: 154px;
+  margin: 0 0 0 32px;
+  padding: 0 53px;
 }
 
 /*--- Оформление чекбокса ---*/

@@ -61,10 +61,14 @@
   font-size: 13px;
   font-family: "OpenSans-Semibold";
   color: rgb(114, 112, 112);
-  line-height: 2.6;
+  line-height: 2.4;
+  padding: 0 10px;
   text-align: center;
   text-decoration: none;
   text-shadow: 0.5px 1px 0px rgba(255, 255, 255, 0.3);
+}
+.work-title:hover {
+  text-decoration: underline;
 }
 .work-description {
   background-color: #fff;
@@ -75,7 +79,7 @@
   line-height: 1.4;
   padding: 7px 11px;
   text-align: center;
-
+  word-break: normal;
 }
 .work-new {
 padding: 20px 21px;

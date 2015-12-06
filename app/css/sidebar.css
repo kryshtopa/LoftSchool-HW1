@@ -13,6 +13,7 @@
   background-image: -moz-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-color: #f1f1f1;
   border: 1px solid #c3c3c3;
   box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.027), inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
   cursor: pointer;
@@ -22,29 +23,32 @@
   background-image: -moz-linear-gradient( 90deg, #bfbcbc 0%, #e8e7e7 100%);
   background-image: -webkit-linear-gradient( 90deg, #bfbcbc 0%, #e8e7e7 100%);
   background-image: -ms-linear-gradient( 90deg, #bfbcbc 0%, #e8e7e7 100%);
+  background-color: #c4c2c2;
   box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
 }
 .menu-li:active {
   background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+  background-color: #42ba9c;
   border: 1px solid #c3c3c3;
   box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.063), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.118);
 }
-              .active-button-index,
-              .active-button-works,
-              .active-button-cont {
-                background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
-                background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
-                background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
-                box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.063), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.118);
-              }
-              .active-button-index {
-                border-radius: 5px 5px 0 0;
-              }
-              .active-button-cont {
-                border-radius: 0 0 5px 5px;
-              }
+.active-button-index,
+.active-button-works,
+.active-button-cont {
+  background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+  background-color: #42ba9c;
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.063), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.118);
+}
+.active-button-index {
+  border-radius: 5px 5px 0 0;
+}
+.active-button-cont {
+  border-radius: 0 0 5px 5px;
+}
 .menu-li:first-child {
   border-radius: 5px 5px 0 0;
 }
@@ -80,7 +84,7 @@
   color: rgb(208, 152, 44);
   font-size: 20px;
   font-family: "OpenSans-Semibold";
-  line-height: 2;
+  line-height: 2.2;
   margin: 0;
   padding: 0 27px;
   text-align: left;
@@ -113,8 +117,8 @@
   cursor: pointer;
   font-family: "OpenSans-Regular";
   font-size: 14px;
-  line-height: 2.7;
-  padding-left: 80px;
+  line-height: 2.5;
+  padding: 0 20px 0 80px;
   position: relative;
   text-decoration: none;
 }
@@ -127,9 +131,9 @@
   display: block;
   height: 38px;
   left: 9px;
-  margin: 0 0 0 10px;
+  margin: -19px 0 0 10px;
   position: absolute;
-  top: -1px;
+  top: 50%;
   width: 39px;
 }
 .contacts-mail:before {

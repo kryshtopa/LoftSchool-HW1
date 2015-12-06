@@ -13,7 +13,7 @@
 }
 .contact-form {
   float: left;
-  width: 100%;  
+  width: 100%;
 }
 .contact-form-name,
 .contact-page-send {
@@ -43,7 +43,7 @@
   border: 1px solid #d6d5d3;
   border-radius: 4px;
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
-  color: rgb(199, 198, 198);
+  color: rgb(70, 70, 70);
   font-family: "OpenSans-Light";
   font-size: 12px;
   text-align: left;
@@ -67,36 +67,38 @@
   color: rgb(114, 112, 112);
   font-size: 14px;
   font-family: "OpenSans-Semibold";
-  height: 37px;
-  line-height: 1.5;
-  margin: 0 30px;
-  padding: 0;
+  line-height: 2.7;
+  margin: 0 28px;
+  padding: 0 23px;
   text-align: center;
   text-shadow: 0.5px 1px 0px rgba(255, 255, 255, 0.7);
-  width: 121px;
 }
 .contact-page-send {
   background-image: -moz-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+  border: 1px solid #6adbbc;
   box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.1), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
 }
 .contact-page-send:hover {
   background-image: -moz-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+  border: 1px solid #6adbbc;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.7);
 }
 .contact-page-clear {
   background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  border: 1px solid #d2d2d2;
   box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.1), inset 0px -2px 3px 0px rgba(41, 41, 41, 0.1);
 }
 .contact-page-clear:hover {
   background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  border: 1px solid #d2d2d2;
   box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.1);
 }
 .contact-page-field::-webkit-validation-bubble-message {
