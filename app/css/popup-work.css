@@ -1,0 +1,151 @@
+.popup-work {
+  display: none; /*выключен до вызова через jQuery*/
+
+  background-color: #f0eeed;
+  border-radius: 5px;
+  background-image: -moz-linear-gradient( 90deg, #f0eeed 0%, #fbfbfa 100%);
+  background-image: -webkit-linear-gradient( 90deg, #f0eeed 0%, #fbfbfa 100%);
+  background-image: -ms-linear-gradient( 90deg, #f0eeed 0%, #fbfbfa 100%);
+  background-color: #f5f4f3;
+  box-shadow: 5.5px 9.5px 27px 0px rgba(159, 159, 159, 0.3), inset 3px 6px 6px 0px rgba(255, 255, 255, 0.4);
+  width: 362px;
+}
+.popup-work:before {
+  content: "Добавление проекта";
+  color: #f8f7f6;
+  font-size: 12px;
+  font-family: "OpenSans-Light";
+  left: 22px;
+  position: absolute;
+  text-align: left;
+  top: -20px;
+}
+.popup {
+  padding: 30px 20px;
+}
+.popup-close {
+  display: block;
+  float: right;
+  margin: 8px;
+}
+.popup-alert-error .popup-close {
+  margin: 0;
+}
+.popup-row {
+  margin-bottom: 6px;
+}
+.label {
+  display: block;
+  font-size: 14px;
+  font-family: "OpenSans-Regular";
+  color: rgb(114, 112, 112);
+  text-align: left;
+  height: 13px;
+  margin-bottom: 15px;
+}
+.popup-field {
+  background-image: -moz-linear-gradient( 90deg, #f4f3f3 0%, #fbfcfd 100%);
+  background-image: -webkit-linear-gradient( 90deg, #f4f3f3 0%, #fbfcfd 100%);
+  background-image: -ms-linear-gradient( 90deg, #f4f3f3 0%, #fbfcfd 100%);
+  border: 1px solid rgb(214, 213, 211);
+  border-radius: 4px;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+  color: rgb(199, 198, 198);
+  font-size: 12px;
+  font-family: "OpenSans-Light";
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+}
+.popup-field-text {
+  height: 183px;
+  resize: none;
+  width: 100%;
+}
+
+div.jfilestyle input {
+  background-image: -moz-linear-gradient( 90deg, #f4f3f3 0%, #fbfcfd 100%);
+  background-image: -webkit-linear-gradient( 90deg, #f4f3f3 0%, #fbfcfd 100%);
+  background-image: -ms-linear-gradient( 90deg, #f4f3f3 0%, #fbfcfd 100%);
+  border: 1px solid rgb(214, 213, 211);
+
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+  color: rgb(199, 198, 198);
+  font-size: 12px;
+  font-family: "OpenSans-Light";
+  height: 42px;
+  text-align: left;
+  padding: 10px;
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+  width: 270px;
+}
+.popup-cloud-icon {
+  background-image: -moz-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  border: 1px solid rgb(214, 213, 211);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.027), inset 0px -2px 3px 0px rgba(41, 41, 41, 0.02);
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 42px;
+  padding: 10px 13px;
+  width: 52px;
+}
+.popup-button {
+  display: block;
+  float: none;
+  margin: 10px auto 0;
+}
+.popup-work-small {
+  display: none; /*выключен до вызова через jQuery*/
+
+  background-color: #f0eeed;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  background-color: #f5f4f3;
+  background-image: -moz-linear-gradient( 90deg, #f0eeed 0%, #fbfbfa 100%);
+  background-image: -webkit-linear-gradient( 90deg, #f0eeed 0%, #fbfbfa 100%);
+  background-image: -ms-linear-gradient( 90deg, #f0eeed 0%, #fbfbfa 100%);
+  box-shadow: 5.5px 9.5px 27px 0px rgba(159, 159, 159, 0.3), inset 3px 6px 6px 0px rgba(255, 255, 255, 0.4);
+  padding: 25px 20px 20px;
+  width: 362px;
+}
+.popup-alert-error {
+  display: none; /*выключен до вызова через jQuery*/
+
+  border-width: 1px;
+  border-color: rgb(203, 105, 69);
+  border-style: solid;
+  border-radius: 4px;
+  background-color: rgba(203, 105, 69, 0.329);
+  color: rgb(203, 105, 69);
+  padding: 5px;
+  width: 100%;
+}
+.popup-alert-ok {
+  border-width: 1px;
+  border-color: rgb(73, 187, 123);
+  border-style: solid;
+  border-radius: 4px;
+  background-color: rgba(73, 187, 123, 0.329);  color: #49bb7b;
+  padding: 5px;
+  width: 100%;
+}
+.popup-alert-heading {
+  display: block;
+  font-size: 16px;
+  font-family: "OpenSans-Semibold";
+  text-align: left;
+  height: 16px;
+  margin-bottom: 5px;
+}
+.popup-alert-text {
+  font-size: 14px;
+  font-family: "OpenSans-Regular";
+  text-align: left;
+  height: 14px;
+  margin-bottom: 10px;
+}

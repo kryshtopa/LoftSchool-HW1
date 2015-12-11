@@ -3,6 +3,7 @@
   "dependencies": {
     "modernizer": "~2.8.2",
     "jquery": "~2.1.4",
-    "normalize-css": "normalize.css#~3.0.3"
+    "normalize-css": "normalize.css#~3.0.3",
+    "bPopup": "bpopup#~0.11.0"
   }
 }
