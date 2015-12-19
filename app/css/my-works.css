@@ -18,6 +18,7 @@
   box-shadow: -1px 1px 1px 0px rgba(9, 9, 9, 0.1);
   display: inline-block;
   overflow: hidden;
+  position: relative;
   vertical-align: top;
   width: 167px;
   margin: 0 0 50px 29px;

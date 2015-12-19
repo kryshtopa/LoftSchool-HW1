@@ -8,8 +8,9 @@
   text-shadow: 0.5px 1px 0px rgba(102, 101, 101, 0.4);
 }
 .contact-page {
-  padding: 32px 125px;
   min-height: 782px;
+  padding: 32px 125px;
+  position: relative;
 }
 .contact-form {
   float: left;
@@ -47,6 +48,7 @@
   font-family: "OpenSans-Light";
   font-size: 12px;
   text-align: left;
+  outline: none;
   padding: 10px;
 }
 .contact-namearea {
@@ -60,6 +62,7 @@
 }
 .g-recaptcha {
   margin: 0px 0 30px 0;
+  width: 304px;
 }
 .contact-page-send,
 .contact-page-clear {
@@ -69,6 +72,7 @@
   font-family: "OpenSans-Semibold";
   line-height: 1.4;
   margin: 0 28px;
+  outline: none;
   padding: 8px 10px 10px 10px;
   text-align: center;
   text-shadow: 0.5px 1px 0px rgba(255, 255, 255, 0.7);

@@ -27,15 +27,17 @@
   <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
   <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="img/favicon/manifest.json">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg">
   <meta name="msapplication-TileColor" content="#2d89ef">
   <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!--Fonts-->
   <link rel="stylesheet" href="css/fonts/stylesheet.css">
   <!--CSS-->
-  <link rel="stylesheet" href="bower/normalize-css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <!--Bower-CSS-->
+  <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+  <link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css" />
   <!--modernizr-->
   <script src="bower/modernizer/modernizr.js"></script>
 </head>
@@ -63,7 +65,7 @@
               <a href="http://twitter.com/kryshtopa" class="sprite sprite-twitter" target="_blank">Страница Дмитрия Крыштопы в Twitter</a>
             </li>
             <li class="social-button">
-              <a href="http:/github.com/kryshtopa" class="sprite sprite-git" target="_blank">Страница Дмитрия Крыштопы на Github</a>
+              <a href="http://github.com/kryshtopa" class="sprite sprite-git" target="_blank">Страница Дмитрия Крыштопы на Github</a>
             </li>
           </ul>
         </div>
@@ -104,22 +106,22 @@
 
           <section class="block contact-page-form cf">
             <h2 class="heading">У вас интересный проект? Напишите мне!</h2>
-            <form class="contact-page" action="">
+            <form class="contact-page">
               <div class="contact-form-name">
                 <label for="Name">Имя</label>
-                <input class="contact-page-field contact-namearea" type="text" name="Name" placeholder="Как к вам обращаться" required>
+                <input class="contact-page-field contact-namearea" type="text" qtip-content="введите имя" name="name" placeholder="Как к вам обращаться">
               </div>
               <div class="contact-form-email">
                 <label for="Email">Email</label>
-                <input class="contact-page-field contact-namearea" type="email" name="Email" placeholder="Куда мне писать" required>
+                <input class="contact-page-field contact-namearea" type="text" qtip-content="введите email" qtip-position="right" name="mail" placeholder="Куда мне писать">
               </div>
               <div class="contact-form">
                 <label for="Message">Сообщение</label>
-                <textarea class="contact-page-field contact-textarea" rows="4" cols="50" name="Message" placeholder="Кратко в чем суть" required></textarea>
+                <textarea class="contact-page-field contact-textarea" rows="4" type="text" qtip-content="ваш вопрос" name="mesg" placeholder="Кратко в чем суть"></textarea>
               </div>
               <div class="contact-form">
                 <label for="Message">Вы что, робот?!</label>
-                <div class="g-recaptcha" data-sitekey="6LehQhITAAAAAPwPB8Z8-hCtf8EiDaHk0Y2X56xP"></div>
+                <div class="g-recaptcha" data-sitekey="6LehQhITAAAAAPwPB8Z8-hCtf8EiDaHk0Y2X56xP" qtip-content="пройдите проверку" ></div>
               </div>
               <button class="contact-page-send" type="submit" name="submit">Отправить</button>
               <button class="contact-page-clear" type="reset" name="reset">Очистить</button>
@@ -141,10 +143,14 @@
 
 </html>
   <!-- JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
   <script>window.JQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
-  <!-- <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script> -->
-  <script src="js/main.js"></script>
+  <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+  <script src="bower/qtip2/jquery.qtip.min.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/validation.js"></script>
+
+  <script src="js/ie8.js"></script>
 
   <!--recaptcha-->
   <script src='https://www.google.com/recaptcha/api.js'></script>

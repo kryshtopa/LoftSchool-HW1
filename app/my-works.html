@@ -27,15 +27,17 @@
   <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
   <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="img/favicon/manifest.json">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg">
   <meta name="msapplication-TileColor" content="#2d89ef">
   <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!--Fonts-->
   <link rel="stylesheet" href="css/fonts/stylesheet.css">
   <!--CSS-->
-  <link rel="stylesheet" href="bower/normalize-css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <!--Bower-CSS-->
+  <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+  <link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css" />
   <!--modernizr-->
   <script src="bower/modernizer/modernizr.js"></script>
 </head>
@@ -63,7 +65,7 @@
               <a href="http://twitter.com/kryshtopa" class="sprite sprite-twitter" target="_blank">Страница Дмитрия Крыштопы в Twitter</a>
             </li>
             <li class="social-button">
-              <a href="http:/github.com/kryshtopa" class="sprite sprite-git" target="_blank">Страница Дмитрия Крыштопы на Github</a>
+              <a href="http://github.com/kryshtopa" class="sprite sprite-git" target="_blank">Страница Дмитрия Крыштопы на Github</a>
             </li>
           </ul>
         </div>
@@ -150,28 +152,37 @@
 
             <div class="popup-work"> <!-- Popup block -->
               <a href="#" class="popup-close sprite sprite-cross-grey"></a>
-              <form class="popup" action="">
+              <form class="popup">
+
                 <div id="popup-alert-error" class="popup-row popup-alert-error">
                   <a href="#" class="popup-close sprite sprite-cross-small-red"></a>
                   <span class=" popup-alert-heading">Ошибка!</span>
                   <span class="popup-alert-text">Невозможно добавить проект.</span>
                 </div>
+
                 <div class="popup-row">
                   <label class="label" for="Name">Название проекта</label>
-                  <input class="popup-field" type="text" name="project-name" placeholder="Загрузите изображение">
+                  <input class="popup-field" type="text" qtip-content="введите название" name="project-name" placeholder="Загрузите изображение">
                 </div>
                 <div class="popup-row">
-                  <label class="label" for="Email">Картинка проекта</label>
-                  <input type="file" class="jfilestyle" name="img" data-inputSize="270px" data-placeholder="Загрузите изображение" data-buttonText="<div class='popup-cloud-icon'>
-                    <i class='sprite sprite-cloud'></i></div>">
+                  <div class="mask-wrapper">
+                    <div class="mask">
+                      <label class="label" for="project-img">Картинка проекта</label>
+                      <input class="fileInputText" type="text" qtip-content="введите название" placeholder="Загрузите изображение" disabled>
+                      <div class="send-file">
+                        <i class='sprite sprite-cloud'></i>
+                      </div>
+                    </div>
+                    <input id="project-img" class="custom-file-input" type="file" name="project-img">
+                  </div>
                 </div>
                 <div class="popup-row">
                   <label class="label" for="Email">URL проекта</label>
-                  <input class="popup-field" type="email" name="url" placeholder="Url project">
+                  <input class="popup-field" type="text" qtip-content="ссылка на проект" name="url" placeholder="Url project">
                 </div>
                 <div class="popup-row">
                   <label class="label" for="Message">Сообщение</label>
-                  <textarea class="popup-field popup-field-text" rows="4" cols="50" name="popup-message" placeholder="Пара слов о вашем проекте"></textarea>
+                  <textarea class="popup-field popup-field-text" rows="4" type="text" qtip-content="описание проекта" name="popup-message" placeholder="Пара слов о вашем проекте"></textarea>
                 </div>
 
                 <button class="work-add popup-button contact-page-send" type="submit" name="send">Добавить</button>
@@ -208,8 +219,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>window.JQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
   <script src="bower/bPopup/jquery.bpopup.min.js"></script>
-  <script src="bower/jquery-filestyle-1.5.1/src/jquery-filestyle.min.js"></script>
+  <script src="bower/qtip2/jquery.qtip.min.js"></script>
   <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="bower/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/my-works.js"></script>
+
+  <script src="js/ie8.js"></script>
+
 </body>
 </html>

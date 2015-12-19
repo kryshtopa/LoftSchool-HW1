@@ -6,7 +6,7 @@
 @import "contact.css";
 @import "authorization.css";
 @import "popup-work.css";
-@import "/bower/jquery-filestyle-1.5.1/src/jquery-filestyle.min.js";
+@import "tooltip.css";
 
 
 
@@ -229,7 +229,7 @@ body {
 
 /*----- Для лучшего отображения фона в IE8 -----*/
 
-body {
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/background.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/background.png', sizingMethod='scale')";
+.wrap {
+  /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/background.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/background.png', sizingMethod='scale')";*/
 }
