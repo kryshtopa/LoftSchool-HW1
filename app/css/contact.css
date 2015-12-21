@@ -51,6 +51,9 @@
   outline: none;
   padding: 10px;
 }
+.contact-page-field:focus {
+  box-shadow: 0 0 2px 1px #48b79b;
+}
 .contact-namearea {
   height: 40px;
   width: 191px;
@@ -93,6 +96,9 @@
   border: 1px solid #6adbbc;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.7);
 }
+.contact-page-send:active {
+  box-shadow: inset 0px 2px 1px 0px rgba(9, 9, 9, 0.1), 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
+}
 .contact-page-clear {
   background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
@@ -106,6 +112,9 @@
   background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
   border: 1px solid #d2d2d2;
   box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.1);
+}
+.contact-page-clear:active {
+  box-shadow: inset 0px 2px 1px 0px rgba(9, 9, 9, 0.1), 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
 }
 .contact-page-field::-webkit-validation-bubble-message {
   padding: 1em;

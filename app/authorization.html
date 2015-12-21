@@ -27,7 +27,7 @@
   <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
   <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="img/favicon/manifest.json">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg">
   <meta name="msapplication-TileColor" content="#2d89ef">
   <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="css/fonts/stylesheet.css">
   <!--CSS-->
   <link rel="stylesheet" href="css/main.css">
+  <!--[if lt IE 9]><link rel="stylesheet" href="css/ie8.css"><![endif]-->
   <!--Bower-CSS-->
   <link rel="stylesheet" href="bower/normalize-css/normalize.css">
   <link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css" />
@@ -49,8 +50,8 @@
   <div class="wrap">
 
     <form class="authorization-box">
-      <input class="authorization-input authorization-mail" type="text" name="email" qtip-content="введите email" qtip-position="right" placeholder="Введите Email">
-      <input class="authorization-input authorization-key" type="text" name="password" qtip-content="введите пароль" qtip-position="right" placeholder="Введите пароль">
+      <input class="authorization-input authorization-mail" id="email" type="text" name="email" qtip-content="введите email" qtip-position="right" placeholder="Введите Email">
+      <input class="authorization-input authorization-key" id="password" type="text" name="password" qtip-content="введите пароль" qtip-position="right" placeholder="Введите пароль">
       <div class="remember">
         <input type="checkbox" class="checkbox" id="checkbox" />
         <label for="checkbox">Запомнить меня?</label>
@@ -59,6 +60,13 @@
         <button class="contact-page-send" type="submit" name="submit">Войти</button>
       </div>
     </form>
+
+    <div class="popup-error-small"> <!-- Small alert popup block -->
+      <div class="popup-row popup-alert-error">
+        <span class="popup-alert-heading">Ошибка на сервере!</span>
+        <span class="popup-alert-text">Невозможно выполниить вход.</span>
+      </div>
+    </div>
 
   </div> <!-- End of a wrap -->
 
@@ -73,6 +81,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>window.JQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
   <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+  <script src="bower/bPopup/jquery.bpopup.min.js"></script>
   <script src="bower/qtip2/jquery.qtip.min.js"></script>
   <script src="js/validation.js"></script>
   <script src="js/authorization.js"></script>

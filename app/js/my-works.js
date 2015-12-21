@@ -49,14 +49,21 @@ var myWorks = (function () {
   };
 
   // Замена стандартного инпута добавления файлов
-   $('.custom-file-input').on('change', function() {
-      realVal = $(this).val();
-      lastIndex = realVal.lastIndexOf('\\') + 1;
-      if(lastIndex !== -1) {
-        realVal = realVal.substr(lastIndex);
-        $(this).prev('.mask').find('.fileInputText').val(realVal);
-      }
-   });
+  $('.fileInputText').on('click', function(){
+      $('.custom-file-input').trigger('click');
+  });
+  $('.custom-file-input').on('change', function() {
+    realVal = $(this).val();
+    lastIndex = realVal.lastIndexOf('\\') + 1;
+
+    if(lastIndex !== -1) {
+      realVal = realVal.substr(lastIndex);
+      $(this)
+        .prev('.mask')
+        .find('.fileInputText')
+        .val(realVal);
+    }
+  });
 
   // Удаление подсветки при выборе файла для загрузки
   $('form input[type=file]').change(function() {
@@ -92,8 +99,8 @@ var myWorks = (function () {
   };
 
   // Универсальная функция
-  // - Собирает данные из формы
   // - Проверяет форму
+  // - Собирает данные из формы
   // - Делает запрос на сервер и возвращает ответ с сервера
   var _ajaxForm = function (form, url) {
 
@@ -108,7 +115,10 @@ var myWorks = (function () {
       data: data,
     }).fail( function(ans) {
       console.log('Проблемы в PHP');
-      form.find('.popup-alert-error').text('На сервере произошла ошибка!').show();
+      form
+        .find('.popup-alert-error')
+        .text('На сервере произошла ошибка!')
+        .show();
     });
 
     return result;

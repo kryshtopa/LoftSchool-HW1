@@ -83,13 +83,13 @@
   word-break: normal;
 }
 .work-new {
-padding: 20px 21px;
   font-size: 14px;
   font-family: "OpenSans-Semibold";
   color: rgb(114, 112, 112);
   line-height: 1.6;
+  padding: 20px 21px;
   text-align: left;
-  text-shadow: 0.5px 0.9x 0px rgba(255, 255, 255, 0.3);
+  text-shadow: 0.5px 0.9px 0px rgba(255, 255, 255, 0.3);
   text-decoration: none;
 }
 .work-new:hover {

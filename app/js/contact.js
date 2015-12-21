@@ -15,12 +15,40 @@ var contact = (function () {
         url = 'contact.php',
         defObj = _ajaxForm(form, url);
 
-    // работаем с ответом от сервера
+    if(defObj) {
+      defObj.done(function(ans) {
+        var successBox = $('.popup-work-small'),
+            errorBox = $('.popup-alert-error');
+
+        if(ans.status === 'OK') {
+          successBox.show().bPopup();
+        } else {
+          errorBox.show().bPopup();
+        }
+      });
+    }
 
   };
 
   var _ajaxForm = function (form, url) {
+
     if(!validation.validationForm(form)) return false;
+
+    data = form.serialize();
+
+    var result = $.ajax({
+      url: url,
+      type: 'POST',
+      dataType: 'json',
+      data: data,
+    }).fail( function(ans) {
+      console.log('Проблемы в PHP');
+      $('.popup-error-small').bPopup();
+      $('.popup-alert-error').show();
+    });
+
+    return result;
+
   };
 
   return {
