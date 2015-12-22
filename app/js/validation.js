@@ -31,8 +31,7 @@ var validation = (function () {
   };
 
   // Создает тултип
-  var _createQtip = function (formField, position, hide) {
-    var hide = hide;
+  var _createQtip = function (formField, position, tipText) {
 
     // Позиция тултипа
     if (position === 'right') {
@@ -53,17 +52,18 @@ var validation = (function () {
     }
 
     // Инициализация тултипа
+
+var tipText = tipText;
+
     formField.qtip({
       content: {
-        text: function() {
-          return $(this).attr('qtip-content');
-        }
+        text: tipText
       },
       show: {
         event: 'show'
       },
       hide: {
-        event: hide
+        event: 'keydown hideTooltip'
       },
       position: position,
       style: {
@@ -86,98 +86,62 @@ var validation = (function () {
     $.each(formFields, function (index, val) {
       var formField = $(val),
           val = formField.val(),
-          hide = 'keydown hideTooltip',
-          pos = formField.attr('qtip-position');
-
+          pos = formField.attr('qtip-position'),
+          tipText = function() {
+            return $(this).attr('qtip-content');
+          };
 
       // Проверка заполнения полей
       if(!val.length) {
-        _createQtip(formField, pos, hide);
+        _createQtip(formField, pos, tipText);
         formField.addClass('redError');
         valid = false;
+      } else {
+        var fieldValidation = function (formFieldID, patt, tipText) {
+          var ele = formFieldID,
+              tipText = tipText,
+              patt = patt,
+              pos = ele.attr('qtip-position');
+
+          if(!patt.test(ele.val())) {
+            _createQtip(ele, pos, tipText);
+            ele.addClass('redError');
+            valid = false;
+          }
+        };
+
+        // Проверка правильности заполнения поля с Email
+        if($('#email')[0]){
+          return fieldValidation ($('#email'), /^.+@.+[.].{2,}$/i, 'вы ошиблись при вводе email');
+        }
+
+        // Проверка правильности заполнения поля с URL
+        if($('#popup-url')[0]){
+          return fieldValidation ($('#popup-url'), /^(ftp|http|https):\/\/[^ "]+$/, 'введите полный адрес');
+        }
+
+        // Проверка правильности заполнения поля с password
+        if($('#password')[0]){
+          return fieldValidation ($('#password'), /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/, 'вы ошиблись при вводе пароля');
+        }
+
+        // Проверка правильности заполнения поля с recaptcha
+        if($('.g-recaptcha')[0]) {
+          $('.g-recaptcha', function () {
+            var v = grecaptcha.getResponse(),
+                elem = $('.g-recaptcha'),
+                hide = 'mouseleave',
+                pos = 'right';
+
+            if(v.length == 0) {
+              _createQtip(elem, pos, hide);
+              valid = false;
+            }
+          })
+        }
+
       }
     });
-
-    // Проверка правильности заполнения поля с Email
-    if($('#email')[0]) {
-      $('#email', function () {
-        var ele = $('#email'),
-            patt = /^.+@.+[.].{2,}$/i,
-            hide = 'keydown hideTooltip',
-            pos = ele.attr('qtip-position');
-
-        if(!patt.test(ele.val())) {
-          _createQtip(ele, pos, hide);
-          ele.addClass('redError');
-          valid = false;
-        }
-      })
-    }
-
-    // Проверка правильности заполнения поля с URL
-    if($('#popup-url')[0]) {
-      $('#popup-url', function () {
-        var elem = $('#popup-url'),
-            patt = /^(ftp|http|https):\/\/[^ "]+$/,
-            hide = 'keydown hideTooltip',
-            pos = elem.attr('qtip-position');
-
-        if(!patt.test(elem.val())) {
-          _createQtip(elem, pos, hide);
-          elem.addClass('redError');
-          valid = false;
-        }
-      })
-    }
-
-    // Проверка правильности заполнения поля с image
-    if($('#upload-img')[0]) {
-      $('#upload-img', function () {
-        var elem = $('#upload-img'),
-            patt = /\.(jpe?g|png|gif|bmp)$/,
-            hide = 'keydown hideTooltip',
-            pos = elem.attr('qtip-position');
-
-        if(!patt.test(elem.val())) {
-          _createQtip(elem, pos, hide);
-          elem.addClass('redError');
-          valid = false;
-        }
-      })
-    }
-
-    // Проверка правильности заполнения поля с recaptcha
-    if($('.g-recaptcha')[0]) {
-      $('.g-recaptcha', function () {
-        var v = grecaptcha.getResponse(),
-            elem = $('.g-recaptcha'),
-            hide = 'mouseleave',
-            pos = 'right';
-
-        if(v.length == 0) {
-          _createQtip(elem, pos, hide);
-          valid = false;
-        } else {
-
-        }
-      })
-    }
-
-    // Проверка правильности заполнения поля с password
-    if($('#password')[0]) {
-      $('#password', function () {
-        var elem = $('#password'),
-            patt = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/,
-            hide = 'keydown hideTooltip',
-            pos = elem.attr('qtip-position');
-
-        if(!patt.test(elem.val())) {
-          _createQtip(elem, pos, hide);
-          elem.addClass('redError');
-          valid = false;
-        }
-      })
-    }
 
     return valid;
 
