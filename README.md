@@ -1,7 +1,13 @@
 Как установить проект
 
-1. git clone https://github.com/kryshtopa/LoftSchool-HW1
-2. cd LoftSchool-HW1
-3. bower i
-4. npm i
-5. gulp
+1. Откройте консоль и перейдите в папку, в которую вы хотите распаковать проект
+2. Введите в вашу консоль следующие команды:
+
+   git clone https://github.com/kryshtopa/LoftSchool-HW1
+   cd LoftSchool-HW1
+   bower i
+   npm i
+   gulp
+
+3. Протестируйте сайт в открывшемся окне браузера
+4. Загрузите содержимое папки "app" на ваш сервер
